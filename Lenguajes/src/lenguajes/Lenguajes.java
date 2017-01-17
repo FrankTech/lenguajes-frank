@@ -17,7 +17,7 @@ public class Lenguajes {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        System.out.println("Hola mundo c:");
+        System.out.println("Hola mundo c: pero desde github xD ");
     }
     
 }
