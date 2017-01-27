@@ -8,6 +8,15 @@ package elimc;
 
 public class AplicacionImc {
     public static void main(String[] args) {
+        Usuario yo=new Usuario();
+            yo.setPeso(80);
+            yo.setAltura(1.70f);
+        Imc imc=new Imc();
+        imc.setUser(yo);
+        System.out.println(imc.calcular());
+        
+        
+        
         
     }
     
