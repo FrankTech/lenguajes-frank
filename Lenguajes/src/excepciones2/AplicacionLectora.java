@@ -89,9 +89,10 @@ public class AplicacionLectora extends javax.swing.JFrame {
             selector.showOpenDialog(this);
             
             File file = selector.getSelectedFile();
+            ValidacionArchivo.ValidarExtencion(file);
             ModeloLector modelo=new ModeloLector();
             textoResultado.setText(modelo.leerArchivo(file));
-        } catch (IOException ex) {
+        } catch (Exception ex) {
             textoResultado.setText(ex.getMessage());
             Logger.getLogger(AplicacionLectora.class.getName()).log(Level.SEVERE, null, ex);
         }
